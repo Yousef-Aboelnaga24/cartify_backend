@@ -29,7 +29,7 @@ class UpdateProductRequest extends FormRequest
             'price' => 'sometimes|numeric|min:0',
             'image' => 'sometimes|image|mimes:png,jpg,jpeg|max:2048',
             'stock' => 'sometimes|integer|min:0',
-            'rating'=>'nullable|numeric|min:0|max:5'
+            'rating' => 'nullable|numeric|min:0|max:5'
         ];
     }
 }
