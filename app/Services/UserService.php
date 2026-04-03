@@ -15,7 +15,7 @@ class UserService
     public function create(array $data)
     {
         $data['password'] = bcrypt($data['password']);
-        return User::create($data);
+        $user = User::create($data);
 
         event(new Registered($user));
 
